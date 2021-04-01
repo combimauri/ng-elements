@@ -1,0 +1,10 @@
+{
+  "name": "ng-elements-test",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "postinstall": "cd ng-button && npm install && cd ../react-container && npm install && cd ../vanilla-container && npm install",
+    "build-element": "cd ng-button && npm run build:prod",
+    "inject-element": "cp -rf ng-button/dist/ng-button react-container/public && cp -rf ng-button/dist/ng-button vanilla-container"
+  }
+}
